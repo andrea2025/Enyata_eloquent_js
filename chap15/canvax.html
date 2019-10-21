@@ -1,0 +1,32 @@
+<canvas width="600" height="200"></canvas>
+    <script>
+      let cx = document.querySelector("canvas").getContext("2d");
+      function trapezoid() {
+        cx.beginPath();
+        cx.moveTo(40, 0);
+        cx.lineTo(90, 0);
+        cx.lineTo(120, 50);
+        cx.lineTo(10, 50);
+        cx.closePath();
+        cx.stroke();
+      }
+      trapezoid();
+
+
+
+
+      function diamond() {
+        cx.beginPath();
+        cx.rotate(Math.PI / 4);
+        cx.moveTo(60, 0);
+        cx.lineTo(120, 0);
+        cx.lineTo(120, 60);
+        cx.lineTo(60, 60);
+        cx.closePath();
+        cx.fillStyle = "red";
+        cx.fill(); 
+    
+
+      }
+      diamond()
+    </script>
